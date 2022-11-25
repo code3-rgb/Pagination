@@ -8,8 +8,14 @@ const postRoutes = require('./routes/postRoutes')
 connectDB()
 const app = express()
 const PORT = process.env.PORT
+const cors = require('cors')
 
 app.use(express.json())
+
+app.use(cors({
+    origin: '*',
+}))
+
 app.use('/api/v1/posts', postRoutes)
 
 
