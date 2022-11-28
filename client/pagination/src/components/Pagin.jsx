@@ -1,7 +1,7 @@
 import './Pagin.css'
 
 const Pagin = ({ page,pages,changePage }) => {
-    console.log(page)
+    // console.log(page)
 
     let midldlePagination;
     if(pages <= 5) {
@@ -33,7 +33,7 @@ const Pagin = ({ page,pages,changePage }) => {
                 <button onClick={()=> changePage(pages)}>{pages}</button>
 
             </>
-        )
+        );
 
         if(page > 5) {
             if(pages - page >= 5) {
@@ -75,8 +75,6 @@ const Pagin = ({ page,pages,changePage }) => {
                         </button>
                     ))}
     
-                    <button>...</button>
-                    <button onClick={()=> changePage(pages)}>{pages}</button>
     
                 </>
                 )
