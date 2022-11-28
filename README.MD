@@ -1,4 +1,4 @@
-![Pagination Screenshot](./pagination.png.png "Pagination Screenshot")
+![Pagination Screenshot](./pagination.png "Pagination Screenshot")
 
 ## Intro
 
